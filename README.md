@@ -1,34 +1,55 @@
-#Mobile Automation Testing
+# Mobile Automation Testing
 This type of testing is done to check whether mobile applications work well across various operating systems and mobile devices.
-This testing performs various aspects of testing such as usability, security, performance, quality, and functionality. It also tests the ability of a new application to interact with other applications.
+
+This testing performs various aspects of testing such as usability, security, performance, quality, and functionality. 
+
+It also tests the ability of a new application to interact with other applications.
 
 # Appium
 Appium is an automation testing tool that can be used to validate mobile browsers and mobile applications.
+
 It is used in mobile automation testing because it is free and is cross-platform (can support both iOS and Android).
+
 Automation tests in Appium can be run on mobile devices, simulators, and emulators.
+
 An emulator is software or hardware that allows a computer system (host) to run applications designed for another system (guest).
-The Appium architecture consists of three main components:
-Appium Client
+
+# The Appium architecture consists of three main components:
+-> Appium Client
+
 This contains the automation code (scripted). This code is written in a specific programming language.
 The script contains the configuration details of the application and the mobile device. The scripted code and the configuration details are used to run the applications’ test cases.
-Appium Server
+
+-> Appium Server
+
 This is an HTTP server that receives command requests (HTTP requests) from the client component (in JSON format). The commands are then executed on mobile devices.
-End device
+
+-> End device
+
 This refers to an emulator or a mobile device that is connected to the Appium server. The test cases are executed on this device.
-How does Appium work?
-It sets up an HTTP server that generates a REST API to enhance communication with the client.
-This server collects command requests from the Appium client in JSON format. JSON Wire Protocol is a medium of communication between the server and the client. It plays the role of communicating command requests. These command requests are then executed on the end devices (either on Android, Windows, or iOS).
+
+# How does Appium work?
+It sets up an HTTP server that generates a REST API to enhance communication with the client.This server collects command requests from the Appium client in JSON format. 
+
+JSON Wire Protocol is a medium of communication between the server and the client. It plays the role of communicating command requests. 
+
+These command requests are then executed on the end devices (either on Android, Windows, or iOS).
+
 The Appium server uses a test automation framework to execute requests on the user interface of end devices.
 
-How does Appium work On Android?
+# How does Appium work On Android?
 The Appium client connects with the HTTP server and uses the JSON Wire Protocol for communication.
+
 The Appium server receives requests from the client component.
+
 The server connects with the mobile automation framework for Android (UI Automator or Selendroid).
-Android devices contains bootstrap.jar that receives the test commands from the Appium server. The bootstrap.jar contains executable files that enhance the connection between the server and Android devices. It plays the role of a TCP server since it enhances the secure transmission of test commands to the Android devices.
-The bootstrap.jar uses the UI Automator or Selendroid to execute the command requests on the Android device.
+
+Android devices contains bootstrap.jar that receives the test commands from the Appium server. 
+The bootstrap.jar contains executable files that enhance the connection between the server and Android devices. It plays the role of a TCP server since it enhances the secure transmission of test commands to the Android devices.The bootstrap.jar uses the UI Automator or Selendroid to execute the command requests on the Android device.
+
 The test results are then sent to the server, which eventually sends HTTP responses to the Appium client. The HTTP responses contain status codes indicating success or server error.
 
-Test Steps for Post Image Feature for the given task:
+# Test Steps for Post Image Feature for the given task:
 1.Download and configure appiumin and Emulator(from Android studio) in your system.
 
 2.Open the emulator.
@@ -43,7 +64,7 @@ Test Steps for Post Image Feature for the given task:
 
 7.Now try posting image and check for below mentioned test cases. 
 
-Manual Test Cases for Post Image upload functionality:
+# Manual Test Cases for Post Image upload functionality:
 
 1.Firstly, check Image upload path.
 
@@ -71,8 +92,6 @@ Manual Test Cases for Post Image upload functionality:
 
 13.Test for the image quality after upload.The quality of the image should not be changed after uploading the image.
 
- 
+I am attaching the screen recorded session explaining the same.
 
-These are the enough test cases which cover all major functionality of Image Upload feature.
-
- 
+Thanks You! 
