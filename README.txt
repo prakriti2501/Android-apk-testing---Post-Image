@@ -1,8 +1,8 @@
-Mobile Automation Testing
+#Mobile Automation Testing
 This type of testing is done to check whether mobile applications work well across various operating systems and mobile devices.
 This testing performs various aspects of testing such as usability, security, performance, quality, and functionality. It also tests the ability of a new application to interact with other applications.
 
-Appium
+# Appium
 Appium is an automation testing tool that can be used to validate mobile browsers and mobile applications.
 It is used in mobile automation testing because it is free and is cross-platform (can support both iOS and Android).
 Automation tests in Appium can be run on mobile devices, simulators, and emulators.
